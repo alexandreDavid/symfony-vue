@@ -11,9 +11,7 @@ import './styles/app.css';
 // start the Stimulus application
 import './bootstrap';
 
-import Vue from 'vue';
+import { createApp } from 'vue';
 import VueRoot from './VueRoot.vue'
 
-new Vue({
-  render: h => h(VueRoot),
-}).$mount('#vue-app')
+createApp(VueRoot).mount('#vue-app')
